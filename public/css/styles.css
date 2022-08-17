@@ -1,0 +1,169 @@
+/*** Available font-weights for Open Sans Pro (normal & italic) ***/
+/* 
+     ExtraLight 200
+     Light 300 (thin)
+     Regular 400 (normal)
+     SemiBold 600
+     Bold 700
+     Black 900 
+*/
+
+/* GENERAL STYLES */
+
+:root {
+  --primary: #191970;
+  --primary-darker: #101061;
+  --links: rgb(46, 46, 185);
+  --light-links: rgb(102, 102, 226);
+  --very-dark-powderblue: rgb(77, 96, 99);
+  --dark-powderblue: rgb(122, 183, 190);
+  --powderblue: PowderBlue;
+  --light-powderblue: rgb(214, 240, 243);
+  --visited: rgb(130, 33, 130);
+  --hover: rgb(231, 103, 231);
+  --light-gold: rgb(255, 224, 50);
+  --very-light-gold: rgb(255, 254, 243);
+}
+
+body {
+  background-color: var(--powderblue);
+  background-image: linear-gradient(
+    to bottom right,
+    var(--powderblue),
+    var(--light-links)
+  );
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 300;
+  font-size: 1.3rem;
+  color: var(--primary-darker);
+  padding: 5%;
+  min-height: 100vh;
+}
+
+/*** HEADINGS ***/
+
+.main-heading {
+  font-family: "Rubik Marker Hatch", cursive;
+  color: var(--primary);
+  font-size: 4.5rem;
+  margin-bottom: 0.5em !important;
+}
+
+.new-heading,
+.edit-heading {
+  font-size: 3.5rem;
+  font-family: "Playfair Display", serif;
+}
+
+.card-title,
+h2 {
+  font-family: "Playfair Display", serif;
+}
+
+/*** LINKS & BUTTONS ***/
+
+a {
+  color: var(--links);
+}
+
+a:visited {
+  color: var(--visited);
+}
+
+a:hover {
+  color: var(--hover);
+  text-decoration: none;
+}
+
+.btn-new {
+  background-color: gold;
+  color: var(--primary) !important;
+  border: 1px solid gold;
+}
+
+.btn-new:hover {
+  background-color: var(--light-gold);
+}
+
+.btn-new:active {
+  transform: scale(1.05);
+}
+
+.btn-more,
+.btn-more:visited,
+.btn-delete,
+.btn-delete:visited {
+  outline: 1px goldenrod solid;
+  padding: 0.2em 0.6em;
+  color: goldenrod;
+  border-radius: 50px;
+  transition: color 0.15s ease-in-out;
+  font-weight: normal;
+}
+
+.btn-delete,
+.btn-delete:visited {
+  color: red;
+  outline-color: red;
+  font-size: 1.3rem;
+  background-color: transparent;
+}
+
+.btn-more:hover {
+  text-decoration: none;
+  color: gold;
+  outline-color: gold;
+  transition: color 0.15s ease-in-out, outline-color 0.15s ease-in-out;
+}
+
+.btn-more:active {
+  transform: scale(1.05);
+}
+
+.btn-save,
+.btn-edit,
+.btn-edit:visited {
+  color: white;
+  background-color: var(--primary) !important;
+  font-weight: 600;
+  border: solid var(--primary) 2px;
+}
+
+.btn-cancel,
+.btn-cancel:visited,
+.btn-back {
+  outline: 1px var(--primary) solid;
+  color: var(--primary);
+  font-weight: 600;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.btn-back {
+  background-color: var(--light-powderblue);
+}
+
+/*** CARD STYLING ***/
+
+.card {
+  border: 1px solid var(rgb(77, 96, 99));
+  border-radius: 10px;
+  background-color: var(--very-light-gold);
+}
+
+.text-muted {
+  color: goldenrod !important;
+  font-weight: thin;
+  line-height: 1.4;
+}
+
+/*** RESPONSIVE ***/
+/* this is Bootstrap! Hardly anything to do */
+
+@media (max-width: 600px) {
+  .main-heading {
+    font-size: 3.5rem;
+  }
+  .card {
+    padding: 0.5em !important;
+  }
+}
