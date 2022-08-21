@@ -24,7 +24,7 @@
     <div class="container">
       <div class="card mt-4 p-5">
         <div class="card-body">
-          <h1 class="mb-1 card-title"><%= article.title %></h1>
+          <h1 class="mb-1 card-title article-heading"><%= article.title %></h1>
           <div class="d-flex align-items-start flex-column">
             <div class="card-subtitle text-muted mt-2">
               <%= article.createdAt.toLocaleDateString() %>
@@ -39,7 +39,7 @@
             <a href="/" class="btn btn-back float-right ml-1">home</a>
             <a
               href="/articles/edit/<%= article.id %>"
-              class="btn btn-edit float-right"
+              class="btn btn-edit float-right mr-1"
               >Edit</a
             >
           </div>
@@ -47,13 +47,13 @@
       </div>
     </div>
     <body>
-    <div class="mermaid">
+    <div class="mermaid d-none">
       graph LR A --- B B-->C[fa:fa-ban forbidden] B-->D(fa:fa-spinner);
     </div>
-    <div class="mermaid">
+    <div class="mermaid d-none">
       graph TD A[Client] --> B[Load Balancer] B --> C[Server1] B --> D[Server2]
     </div>
-    <div class="mermaid">
+    <div class="mermaid d-none">
       pie title People who should learn Markdown (after second thought)
       "Everybody" : 100
       </div>

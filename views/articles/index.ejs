@@ -23,7 +23,9 @@
   <body>
     <div class="container">
       <h1 class="main-heading">My Marvelous Markdown Blog</h1>
-      <h2 class="mb-4 text-center">Welcome to this little blog project!</h2>
+      <h2 class="mb-4 text-center main-heading-2">
+        Welcome to this little blog project!
+      </h2>
       <p class="mb-5">
         Learn more about the power of Markdown and how you can take advantage of
         it. This application allows you to write and edit your blog posts in
@@ -32,12 +34,12 @@
         a Markdown tutorial. You should be able to pick up the basics in 1 hour
         or less. You are familiar with Markdown and want to jump right in? Let's
         start with a
-        <a href="/articles/new" class="ml-2 btn btn-new">New Article</a> !
+        <a href="/articles/new" class="ml-2 btn btn-new">New Article</a>
       </p>
       <% articles.forEach(article => { %>
       <div class="card mt-4 p-5">
         <div class="card-body">
-          <h4 class="card-title"><%= article.title %></h4>
+          <h3 class="card-title"><%= article.title %></h4>
           <div class="card-subtitle text-muted mb-2">
             <%= article.createdAt.toLocaleDateString() %>
           </div>
