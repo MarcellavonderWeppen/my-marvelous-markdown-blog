@@ -180,6 +180,7 @@ a:hover {
 @media (max-width: 600px) {
   body {
     padding: 0;
+    font-size: 1.3rem;
   }
   .main-heading {
     font-size: 3.5rem;
