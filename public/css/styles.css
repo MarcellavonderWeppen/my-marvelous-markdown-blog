@@ -183,7 +183,8 @@ a:hover {
     font-size: 1.3rem;
   }
 
-  ul {
+  ul,
+  ol {
     padding: 1em;
   }
 
