@@ -22,6 +22,7 @@
     "marked": "^4.0.18",
     "mermaid": "^9.1.6",
     "method-override": "^3.0.0",
+    "moemark-mermaid": "^0.3.11",
     "mongoose": "^6.5.2",
     "slugify": "^1.6.5",
     "start": "^5.1.0"

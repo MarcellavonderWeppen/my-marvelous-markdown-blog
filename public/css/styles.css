@@ -22,6 +22,7 @@
   --visited: rgb(130, 33, 130);
   --hover: rgb(231, 103, 231);
   --light-gold: rgb(255, 224, 50);
+  --lighter-gold: #ffffe8;
   --very-light-gold: rgb(255, 254, 243);
 }
 
@@ -38,6 +39,18 @@ body {
   color: var(--primary-darker);
   padding: 5%;
   min-height: 100vh;
+}
+
+blockquote {
+  background-color: var(--lighter-gold);
+  padding: 1em;
+  border-left: goldenrod solid 5px;
+}
+
+blockquote {
+  background-color: #f7feff;
+  padding: 1em;
+  border-left: midnightblue solid 5px;
 }
 
 /*** HEADINGS ***/
@@ -87,6 +100,10 @@ a:visited {
 a:hover {
   color: var(--hover);
   text-decoration: none;
+}
+
+a:active {
+  color: goldenrod;
 }
 
 .btn {
@@ -179,7 +196,7 @@ a:hover {
 
 @media (max-width: 600px) {
   body {
-    padding: 0;
+    padding: 1.5em 0;
     font-size: 1.3rem;
   }
 
