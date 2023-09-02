@@ -1,3 +1,5 @@
+console.log("Node.js version:", process.version);
+
 const express = require("express");
 const mongoose = require("mongoose");
 const Article = require("./models/article");
