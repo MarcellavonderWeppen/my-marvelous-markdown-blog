@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="data:;base64,=" /> <!-- prevent favicon.ico requests -->
+    <link rel="icon" href="data:;base64,=" />
+    <!-- prevent favicon.ico requests -->
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
@@ -46,7 +47,6 @@
         </div>
       </div>
     </div>
-    <body>
     <div class="mermaid d-none">
       graph LR A --- B B-->C[fa:fa-ban forbidden] B-->D(fa:fa-spinner);
     </div>
@@ -56,11 +56,8 @@
     <div class="mermaid d-none">
       pie title People who should learn Markdown (after second thought)
       "Everybody" : 100
-      </div>
+    </div>
     <script src="/mermaid/dist/mermaid.js"></script>
-    <script>
-      console.log(mermaid);
-    </script>
     <script>
       mermaid.initialize({ startOnLoad: true });
     </script>
